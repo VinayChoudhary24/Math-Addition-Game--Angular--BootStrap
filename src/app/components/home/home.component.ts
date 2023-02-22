@@ -57,7 +57,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   startTimer() {
     this.startTime = Date.now();
     this.timer = setInterval(() => {
-      this.averageTime = this.totalTime / this.numSolutions;
+      this.averageTime = +(this.totalTime / this.numSolutions).toFixed(1);
     }, 1000);
   }
 
