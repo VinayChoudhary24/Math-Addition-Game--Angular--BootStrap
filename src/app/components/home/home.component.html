@@ -1,0 +1,22 @@
+<!-- The Main Container -->
+<div class="container">
+  <!-- Displays the Random Numbers -->
+  <div class="col-sm-5 form-group">
+    <span>{{ randomValue1 }} + {{ randomValue2 }} = </span>
+    <!-- The (blur) event is used to trigger the checkAnswer() method when the user leaves the input field. -->
+    <input
+    type="number"
+    [(ngModel)]="userSum"
+    (blur)="checkAnswer()"
+     />
+  </div>
+     <!-- The Message Section -->
+     <div class="error" *ngIf="userSum !== '' ">
+      <p *ngIf="isCorrect" class="alert alert-success">Correct answer!</p>
+      <p *ngIf="!isCorrect" class="alert alert-danger">Wrong answer.</p>
+     </div>
+     <!-- The TimeTaken by the User -->
+     <div class="details">
+      <p>{{averageTime}} Seconds per solution</p>
+     </div>
+</div>

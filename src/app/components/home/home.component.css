@@ -1,0 +1,36 @@
+.container {
+  margin: 15rem auto;
+}
+
+/* the random Numbers and the User Input */
+.form-group {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-group > span {
+  font-size: 5rem;
+}
+
+.form-group > input {
+  height: 5rem;
+}
+
+/* Show the Error Message */
+.error {
+  margin: 1rem auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* the Time Taken by the User  */
+.details {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
